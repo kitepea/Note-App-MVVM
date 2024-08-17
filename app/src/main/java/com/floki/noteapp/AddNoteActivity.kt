@@ -43,7 +43,7 @@ class AddNoteActivity : AppCompatActivity() {
         }
 
         binding.saveButton.setOnClickListener {
-            val title = "✍\uFE0F " + binding.eTTitle.text.toString()
+            val title = binding.eTTitle.text.toString()
             val content = binding.eTNote.text.toString()
 
             if (title.isNotEmpty() || content.isNotEmpty()) {
